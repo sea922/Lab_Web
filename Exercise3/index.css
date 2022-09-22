@@ -1,0 +1,32 @@
+#content-body .block-views, .content-top .hightlight {
+  background: none repeat scroll 0 0 #fdfdfd;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 8px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #08c;
+}
+h2{
+  color: #0056e0;
+}
+
+body{
+  /* color: rgb(105, 105, 154); */
+  border: 1px solid rgb(176, 172, 172);
+  background-color: rgb(255, 255, 255);
+  width: 1000px;
+  height: 350px;
+  margin: auto;
+}
+.more-link{
+  float: right;
+  font-weight: bold;
+}
+
+item-list{
+  color: rgb(105, 105, 154);
+}
