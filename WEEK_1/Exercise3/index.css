@@ -22,6 +22,9 @@ body{
   height: 350px;
   margin: auto;
 }
+a:hover{
+  color: #565656;
+}
 .more-link{
   float: right;
   font-weight: bold;
