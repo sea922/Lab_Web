@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      font-size: 40px;
+    }
+
+    .block{
+      text-align: center;
+      display: inline-block;
+    } 
+
+
+    .first, .second, .third, .four, .five, .six{
+      height: 150px;
+      width: 100px;
+      margin: 5px;
+      border-left: 7px dotted #d2b5fe;
+      background-color: rgb(228, 225, 225);
+      padding: 5px;
+    }
+
+    .first {
+      background-color: yellow;
+      color: orange;
+      opacity: 0.8;
+    }
+    .six {
+      position: relative;
+      float: right;
+      right: 1em;
+      top: 8em;
+  
+      right: 15em;
+      z-index: 200;
+      font-weight:bolder;
+    }
+  </style>
+  <title>CS142 Project # 1</title>
+</head>
+<body>
+  <div class="container">
+    <div class="block">
+      <div class="block first">A</div>
+      <div class="block second">B</div>
+      <div class="block third">C</div>
+      <div class="block four">D</div>
+      <div class="block five">E</div>
+    </div>
+    <div class="block six">F</div>
+  </div>
+</body>
+</html>

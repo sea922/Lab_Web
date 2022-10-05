@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 40px;
+}
+
+.block{
+  text-align: center;
+}
+
+
+.first, .second, .third, .four, .five, .six{
+  height: 100px;
+  width: 100px;
+  border-top: 1px solid #032dff;
+  background-color: rgb(228, 225, 225);
+  margin: 10px;
+}
+
+.first, .third, .five {
+  background-color: rgb(202, 189, 189);
+}
+
+.six {
+  background-color: #7499d3;
+  border: 4px solid;
+}
