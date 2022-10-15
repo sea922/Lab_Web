@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form onsubmit="return getdata()">
+    <input type="text" name="text_one" id="text_one">
+    <button id="btn" onclick="getdata()">Submit</button>
+  </form>
+  
+  <script>
+    function getdata(){
+      document.getElementById("btn").innerHTML = "Sending";
+      var txtOne = document.getElementById('text_one').value;
+      console.log(txtOne);
+      var value = txtOne;
+      alert('Value: '+ value);
+  }
+  </script>
+</body>
+</html>
