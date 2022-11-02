@@ -7,7 +7,7 @@ property named `cs142models` to the DOM that contains the model data for the dif
 * `cs142models.exampleModel()` - The model for the problem 1 - example view.
 * `cs142models.statesModel()`  - The model for the problem 2 - states view.
 
-These models can be accessed for the Angular controller of the view under the window property.
+These models can be accessed from the React controller of the view under the window property.
 For example:
 
     window.cs142models.statesModel()
