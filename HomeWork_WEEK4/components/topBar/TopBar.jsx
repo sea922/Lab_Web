@@ -19,6 +19,16 @@ class TopBar extends React.Component {
     };
     console.log('object1212 ', this.props.first_name);
   }
+
+  hex_to_ascii = (str1) =>
+  {
+   var hex  = str1.toString();
+   var str = '';
+   for (var n = 0; n < hex.length; n += 2) {
+     str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
+   }
+   return str;
+  }
   
 
   componentDidUpdate(prevProps) {
@@ -32,6 +42,7 @@ class TopBar extends React.Component {
     }
     console.log('first2',prom )
   }
+  
 
 
   render() {
@@ -45,7 +56,7 @@ class TopBar extends React.Component {
             alignItems="center"
           >
             <Typography variant="h5" color="inherit">
-            Truong Van Sy
+           { this.hex_to_ascii("5472756f6e672056616e205379")}
             </Typography>
             {/* <Typography variant="body1">
               version: {this.state.version}

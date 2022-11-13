@@ -26,6 +26,7 @@ class PhotoShare extends React.Component {
   onChangeView = (newView, name) => {
     this.setState({ view: newView + (name && name) });
   };
+  
 
   render() {
     return (
