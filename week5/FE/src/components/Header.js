@@ -1,20 +1,26 @@
 import React from 'react'
 import PersonIcon from '@mui/icons-material/Person';
-import IconButton from '@mui/material/IconButton';
 import ForumIcon from '@mui/icons-material/Forum';
-// import "./Header.css";
+import { IconButton } from '@mui/material';
+import './Header.css'
+import { Link } from 'react-router-dom';
 
-
-export default function Header() {
-  return (
-    <div className='header'>
-      <IconButton>
-        <PersonIcon fontsize="large" className='header__icon'/>
-      </IconButton>
-      <img className='header__logo' src='logo192.png'/>
-      <IconButton>
-        <ForumIcon fontsize="large" className='header__icon'/>
-      </IconButton>
-    </div>
-  )
+const Header = () => {
+    return (
+        <div className='header'>
+            <IconButton>
+                <PersonIcon sx={{ fontSize: 80 }} className="header__icon" />
+            </IconButton>
+            <Link to="/">
+                <img src="logo192.png" alt="header" className='header__logo' />
+            </Link>
+            <Link to="/add">
+                <IconButton>
+                    <ForumIcon sx={{ fontSize: 80 }} className="header__icon" />
+                </IconButton>
+            </Link>
+        </div>
+    )
 }
+
+export default Header

@@ -1,15 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import TinderCards from './components/TinderCards';
 import SwipeButtons from './components/SwipeButtons';
-import DatingCards from './components/DatingCards';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <DatingCards/>
-      <SwipeButtons/>
+    <div className="app">
+      <Router>
+      <Header />
+        <Switch>
+          <Route path="/add">Add People</Route>
+          <Route path="/">
+            <TinderCards />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
